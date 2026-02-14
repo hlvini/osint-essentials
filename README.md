@@ -7,5 +7,5 @@ Searches for open ports on a specified address
 **subdomain_scanner.py**  
 Searches for subdomains on a specified domain, user must provide a file containing a list of subdomains for search
 
-**username_scanner_search.py** 
+**username_scanner_search.py**  
 Searches for a given username throught various social media, user may specify sites than the ones provided
