@@ -22,21 +22,21 @@ def usernameCheck(username):
             else:
                 results[site] = "418 I'm a teapot" # kkkkkk
         except requests.RequestException as e:
-            results[site] = f"Error: {e}"
+            results[site] = f"ERROR: {e}"
     return results
 
-print("\n\033[31m!!! USUÁRIOS PODEM NÃO TER RELAÇÃO UM COM OS OUTROS !!!\033[0m\n")
+print("\n\033[31m!!! USERS MAY BE UNRELATED TO ONE ANOTHER !!!\033[0m\n")
 
 username = input("Informe o nome do usuário: ").strip()
 found = usernameCheck(username)
 
-print("\n\033[31m!!! USUÁRIOS PODEM NÃO TER RELAÇÃO UM COM OS OUTROS !!!\033[0m")
+print("\n\033[31m!!! USERS MAY BE UNRELATED TO ONE ANOTHER !!!\033[0m")
 print("\nRESULTADOS:")
 
 for site, result in found.items():
-    if result and not str(result).startswith("418") and not str(result).startswith("Error"): # imprime o resultado caso a saida não seja invalida
+    if result and not str(result).startswith("418") and not str(result).startswith("ERROR"): # imprime o resultado caso a saida não seja invalida
         print(f"{site}: {result}")
     elif result is None:
-        print(f"{site}: NÃO ENCONTRADO")
+        print(f"{site}: NOT FOUND")
     else:
         print(f"{site}: {result}")

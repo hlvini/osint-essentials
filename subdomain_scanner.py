@@ -1,8 +1,8 @@
 import socket
  
-domain = input("Informe o domínio: ") 
+domain = input("SPECIFY DOMAIN: ") 
 
-listDomain = input("Informe o caminho do arquivo da lista de domínos: ")
+listDomain = input("DOMAIN LIST FILE PATH: ")
 
 # Abre o arquivo e lê cada linha como uma lista
 with open(listDomain, "r") as f:
@@ -13,6 +13,6 @@ for sub in subdomain:
     subdomainFinder = f"{sub}.{domain}"
     try:
         ip = socket.gethostbyname(subdomainFinder)
-        print(f"[DETECTADO] {subdomainFinder} -> {ip}")
+        print(f"[DETECTED] {subdomainFinder} -> {ip}")
     except socket.gaierror:
         pass
