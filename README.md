@@ -1,5 +1,5 @@
 # Python OSINT script tools  
-For those who seek to learn about Open Source Inteligence (OSINT) through a simplified lens, those scripts provide a simple and easy to understand syntax for some of the most widely used techniques.
+For those who seek to learn about Open Source Intelligence (OSINT) through a simplified lens, those scripts provide a simple and easy to understand syntax for some of the most widely used techniques.
 
 
 **port_scanner.py**  
